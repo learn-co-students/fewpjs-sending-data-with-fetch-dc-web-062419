@@ -63,7 +63,7 @@ function submitData(inputName, inputEmail){
             }
 
     return fetch("http://localhost:3000/users", configurationObject).then(function(response) {
-        return response.json();
+         response.json();
       })
       .then(function(object) {
             document.body.innerHTML = object.id;
